@@ -1,0 +1,30 @@
+{
+  "validProduct": {
+    "nome": "Notebook Premium",
+    "preco": 2500,
+    "descricao": "Notebook de alta performance",
+    "quantidade": 10
+  },
+  "invalidProduct": {
+    "nome": "",
+    "preco": -100,
+    "descricao": "Produto inválido",
+    "quantidade": -5
+  },
+  "productWithoutName": {
+    "preco": 1000,
+    "descricao": "Descrição do produto"
+  },
+  "expensiveProduct": {
+    "nome": "Servidor Premium",
+    "preco": 50000,
+    "descricao": "Servidor de alta performance",
+    "quantidade": 2
+  },
+  "cheapProduct": {
+    "nome": "Caneta",
+    "preco": 5,
+    "descricao": "Caneta azul",
+    "quantidade": 100
+  }
+}

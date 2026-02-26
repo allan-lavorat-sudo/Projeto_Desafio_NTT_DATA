@@ -1,0 +1,30 @@
+{
+  "singleItem": {
+    "produtos": [
+      {
+        "idProduto": "product-id-1",
+        "quantidade": 1
+      }
+    ]
+  },
+  "multipleItems": {
+    "produtos": [
+      {
+        "idProduto": "product-id-1",
+        "quantidade": 2
+      },
+      {
+        "idProduto": "product-id-2",
+        "quantidade": 1
+      }
+    ]
+  },
+  "largeQuantity": {
+    "produtos": [
+      {
+        "idProduto": "product-id-1",
+        "quantidade": 50
+      }
+    ]
+  }
+}

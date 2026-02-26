@@ -1,0 +1,33 @@
+{
+  "validAdmin": {
+    "nome": "Admin Teste",
+    "email": "admin@testmail.com",
+    "password": "senha123",
+    "administrador": "true"
+  },
+  "validUser": {
+    "nome": "Usuário Teste",
+    "email": "user@testmail.com",
+    "password": "senha123",
+    "administrador": "false"
+  },
+  "invalidCredentials": {
+    "email": "invalid@testmail.com",
+    "password": "wrongpassword"
+  },
+  "missingEmail": {
+    "password": "senha123"
+  },
+  "dynamicAdmin": {
+    "nome": "Admin Dinâmico",
+    "email": "admin_dynamic_",
+    "password": "senha123",
+    "administrador": "true"
+  },
+  "dynamicUser": {
+    "nome": "Usuário Dinâmico",
+    "email": "user_dynamic_",
+    "password": "senha123",
+    "administrador": "false"
+  }
+}
