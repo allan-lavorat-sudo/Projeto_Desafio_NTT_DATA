@@ -4,17 +4,20 @@
   "description": "Testes automatizados E2E e de API para ServeRest usando Cypress",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
-    "cy:run:frontend": "cypress run --spec 'cypress/e2e/frontend/**/*.cy.js'",
-    "cy:run:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.js'",
-    "cy:run:all": "cypress run",
-    "cy:headless": "cypress run --headless"
+    "test": "set ELECTRON_RUN_AS_NODE=&& cypress run",
+    "cypress:open": "set ELECTRON_RUN_AS_NODE=&& cypress open",
+    "cypress:run": "set ELECTRON_RUN_AS_NODE=&& cypress run",
+    "test:e2e": "set ELECTRON_RUN_AS_NODE=&& cypress run --spec \"cypress/e2e/frontend/**/*.cy.js\"",
+    "test:api": "set ELECTRON_RUN_AS_NODE=&& cypress run --spec \"cypress/e2e/api/**/*.cy.js\"",
+    "cy:run:frontend": "npm run test:e2e",
+    "cy:run:api": "npm run test:api",
+    "cy:run:all": "npm test",
+    "cy:headless": "npm test"
   },
   "keywords": ["cypress", "automation", "testing", "e2e", "api"],
   "author": "QA Automation",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^13.6.2"
+    "cypress": "^14.5.4"
   }
 }
